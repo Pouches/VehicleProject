@@ -1,0 +1,28 @@
+@media only screen and (min-width:200px) and (max-width:500px){
+    body{
+        background-color:#4b5320;
+    }
+}
+
+
+@media only screen and (min-width:501px) and (max-width:719){
+
+    body{
+        background-color:#4b5320;
+    }
+}
+
+@media only screen and (min-width:720px) and (max-width:2160px){
+
+    body{
+        background-color:#4b5320;
+    }
+}
+
+
+
+
+@font-face{
+    font-family: Stencil;
+    src: url('\Fonts\D day stencil\D Day Stencil') type('truetype');
+}

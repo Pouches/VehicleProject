@@ -124,10 +124,10 @@
         Width:15%;
         margin-left:7%;
         font-family:StAR;
-        font-size:1.5em;
+        font-size:1.75em;
         border: solid black 4px;   
         display:inline-block;
-        margin-top:0.125%;
+        margin-top:0.05%;
         text-align:center;
         text-decoration:none;
         -webkit-transition-duration: 1s;
@@ -169,12 +169,14 @@
         position:absolute;
         top:15%;
         border: black solid 4px;
-        width:94.5%;
+        width:92.5%;
         left:2.5%;
         background-attachment: scroll;
         background-color:#333815;
         font-size:1.5em;
         font-family:'StAR';
+        padding-left: 1%;
+        padding-right:1%;
     }
 
     .sectionTitle{
@@ -186,6 +188,10 @@
         left:2.5%;
     }
 }
+
+    .modelVersion{
+        Color:white;
+    }
 
 @font-face{
     font-family: 'Biggie';

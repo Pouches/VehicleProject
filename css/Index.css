@@ -1,0 +1,42 @@
+@font-face{
+    font-family: 'StAR';
+    src: 
+    url(../Fonts/D_day_stencil/D_Day_Stencil.ttf) format('truetype');
+    }
+
+@media only screen and (max-width:500px){
+    body{
+        background-color:#4b5320;
+    }
+}
+
+
+@media only screen and (min-width:501px) and (max-width:719px){
+
+    body{
+        background-color:#4b5320;
+    }
+}
+
+@media only screen and (min-width:720px) and (max-width:2160px){
+
+    body{
+        background-color:#4b5320;
+    }
+}
+
+@font-face{
+    font-family: 'Biggie';
+    src:
+    url(../Fonts/Noto-serif/NotoSerif-ExtraBold.ttf) format('truetype');
+}
+
+.header{
+    position:fixed;
+    left:25%;
+    width:50%;
+    font-family:StAR;
+    font-size:2em;
+    text-align:center;
+    border: black solid 4px;
+}

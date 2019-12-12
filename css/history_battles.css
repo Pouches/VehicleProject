@@ -10,7 +10,7 @@
     }
     @font-face {
         font-family:olden ;
-        src: url(fonts/Bohemian Typewriter.ttf);
+        src: url(fonts/Typew.ttf);
     }
     body{
         background-image: url(../images/old_paper.jpg);
@@ -22,7 +22,7 @@
 @media only screen and (min-width:501px) and (max-width:719px){
     @font-face {
         font-family:olden ;
-        src: url(fonts/Bohemian Typewriter.ttf);
+        src: url(fonts/Typew.ttf);
     }
     body{
         background-image: url(../images/old_paper.jpg);
@@ -41,6 +41,7 @@
         background-repeat: repeat;
         margin-left: 0px;
         margin-right: 0px;
+        width: 2000px;
 
     }
     .timeline{
@@ -55,10 +56,11 @@
         list-style-type: none;
         float: left;
         position: fixed;
-        left: 40%;
+        left: 33%;
     }
-    .nsv>li{
+    .nav>li{
         float: left;
+        padding: 10px;
     }
     .nav>li>a{
         color: black;
@@ -71,9 +73,29 @@
         color: white;
         transition: .7s;
     }
+
+    .i-love-history{
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
     ul{
         float: left;
     }
+    .time1{}
+    .time2{}
+    .time3{}
+    .time4{}
+    .time5{}
+    .time6{}
+    .time7{}
+    .time8{}
+    .time9{}
+    .time10{}
+    .time11{}
+    .time12{}
+
+
+
 } 
 
 
@@ -85,20 +107,20 @@
 @media only screen and (min-width:200px) and (max-width:500px){
         @font-face {
         font-family:olden ;
-        src: url(fonts/Bohemian Typewriter.ttf);
+        src: url(fonts/Typew.ttf);
     }
 }
 
 @media only screen and (min-width:501px) and (max-width:719px){
         @font-face {
         font-family:olden ;
-        src: url(fonts/Bohemian Typewriter.ttf);
+        src: url(fonts/Typew.ttf);
     }
 }
 
 @media only screen and (min-width:720px) and (max-width:2160px){
         @font-face {
         font-family:olden ;
-        src: url(fonts/Bohemian Typewriter.ttf);
+        src: url(fonts/Typew.ttf);
     }
 } 

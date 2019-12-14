@@ -172,7 +172,7 @@
     }
 
     .bodytext{
-        font-size: 12px;
+        font-size: 1.3em;
         position:absolute;
         top:15%;
         border: black solid 4px;
@@ -209,7 +209,20 @@
     }
 
     .variantbody{
-
+        font-size: 1.3em;
+        position:absolute;
+        top:15%;
+        border: black solid 4px;
+        width:92.5%;
+        left:2.5%;
+        background-attachment: scroll;
+        background-color:#333815;
+        font-size:1.3em;
+        font-family:'StAR';
+        padding-left: 1%;
+        padding-right:1%;
+        color:#bababa;
+        text-align:center;
     }
 
 @font-face{

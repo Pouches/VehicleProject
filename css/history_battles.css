@@ -1,13 +1,6 @@
 /*  history  */
 
 @media only screen and (min-width:200px) and (max-width:500px){
-    body{
-        background-image: url(../images/old_paper.jpg);
-        background-repeat: repeat;
-    }
-    .timeline{
-        border: black solid 1px;
-    }
     @font-face {
         font-family:olden ;
         src: url(fonts/Typew.ttf);
@@ -15,23 +8,71 @@
     body{
         background-image: url(../images/old_paper.jpg);
         background-repeat: repeat;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 2000px;
+
     }
+    .timeline{
+        background: black;
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+    }
+    .nav{
+        list-style-type: none;
+        float: left;
+        position: fixed;
+        left: 33%;
+    }
+    .nav>li{
+        float: left;
+        padding: 10px;
+    }
+    .nav>li>a{
+        color: black;
+        font-family: olden;
+        float: left;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    .nav>li>a:hover{
+        color: white;
+        transition: .7s;
+    }
+
+    .i-love-history{
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    ul{
+        float: left;
+    }
+    .linia{
+        background: black;
+        width: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .time1{}
+    .time2{}
+    .time3{}
+    .time4{}
+    .time5{}
+    .time6{}
+    .time7{}
+    .time8{}
+    .time9{}
+    .time10{}
+    .time11{}
+    .time12{}
 
 }
 
 @media only screen and (min-width:501px) and (max-width:719px){
-    @font-face {
-        font-family:olden ;
-        src: url(fonts/Typew.ttf);
-    }
-    body{
-        background-image: url(../images/old_paper.jpg);
-        background-repeat: repeat;
-    }
-
-}
-
-@media only screen and (min-width:720px) and (max-width:2160px){
     @font-face {
         font-family:olden ;
         src: url(fonts/Typew.ttf);
@@ -94,9 +135,140 @@
     .time11{}
     .time12{}
 
+}
+
+@media only screen and (min-width:720px) and (max-width:2160px){
+    @font-face {
+        font-family:olden ;
+        src: url(fonts/Typew.ttf);
+    }
+    body{
+        background-image: url(../images/old_paper.jpg);
+        background-repeat: repeat;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 200000px;
+        overflow-x: auto;
+
+    }
+    .timeline{
+        background: black;
+        width: 10000%;
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+    }
+    .nav{
+        list-style-type: none;
+        float: left;
+        position: fixed;
+        left: 33%;
+    }
+    .nav>li{
+        float: left;
+        padding: 10px;
+    }
+    .nav>li>a{
+        color: black;
+        font-family: olden;
+        float: left;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    .nav>li>a:hover{
+        color: white;
+        transition: .7s;
+    }
+
+    .i-love-history{
+        overflow-x: scroll;
+
+    }
+    ul{
+        float: left;
+    }
+    .hline{
+        background: black;
+        width: 50px;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+    }
+    .history{
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .time1{
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        width: 400px;
+        height: 30%;
+        border: black 2px solid;
+        
+    }
+    .time1>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 25%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time2{}
+    .time3{}
+    .time4{}
+    .time5{}
+    .time6{}
+    .time7{}
+    .time8{}
+    .time9{}
+    .time10{}
+    .time11{}
+    .time12{}
+
 
 
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

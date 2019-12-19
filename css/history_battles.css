@@ -1,5 +1,5 @@
 /*  history  */
-
+/*
 @media only screen and (min-width:200px) and (max-width:500px){
     @font-face {
         font-family:olden ;
@@ -136,7 +136,7 @@
     .time12{}
 
 }
-
+*/
 @media only screen and (min-width:720px) and (max-width:2160px){
     @font-face {
         font-family:olden ;
@@ -159,6 +159,20 @@
         left: 0px;
         display: inline-block;
     }
+    .zline{
+        position: absolute;
+        height: 100000%;
+        width: 5px;
+        background: black;
+        right: 0%;
+        top: 50%;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform-origin: top left;
+}
     .nav{
         list-style-type: none;
         float: left;
@@ -225,9 +239,13 @@
     .time1{
         position: absolute;
         top: 15%;
-        left: 25%;
-        width: 400px;
-        height: 30%;
+        left: -25%;
+       /* width: 100px;
+        height: 100px;*/
+        width: 250px;
+        height: 180px;
+        margin: 0;
+        padding: 0;
         border: black 2px solid;
         text-align: center;
         
@@ -236,12 +254,11 @@
         width: 200px;
         height: 125px;
         position: relative;
-        top: 25%;
+        top: 0%;
         align-content: center;
         margin: 0;
         padding: 0;
         clear: both;
-        float: left;
         
     }
     .time2{}
@@ -251,10 +268,6 @@
     .time6{}
     .time7{}
     .time8{}
-    .time9{}
-    .time10{}
-    .time11{}
-    .time12{}
 
 
 

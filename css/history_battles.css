@@ -147,7 +147,6 @@
         background-repeat: repeat;
         margin-left: 0px;
         margin-right: 0px;
-        width: 200000px;
         overflow-x: auto;
 
     }
@@ -158,6 +157,7 @@
         position: absolute;
         top: 50%;
         left: 0px;
+        display: inline-block;
     }
     .nav{
         list-style-type: none;
@@ -181,10 +181,7 @@
         transition: .7s;
     }
 
-    .i-love-history{
-        overflow-x: scroll;
 
-    }
     ul{
         float: left;
     }
@@ -195,9 +192,35 @@
         top: 5%;
         left: 50%;
     }
+
     .history{
-        overflow: auto;
-        white-space: nowrap;
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+    }
+    .time1  /*.time2  .time3 .time4 .time5 .time6 .time7 .time8 .time9 .time10 .time11  .time12*/{
+      transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+    }
+.test{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+    .time1  .time2  .time3 .time4 .time5 .time6 .time7 .time8 .time9 .time10 .time11  .time12{}
+    .timeline{
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+    }
+    
+    .timeline{
+        display: flex;
+        flex-direction: row;
+        width: 400vw;
     }
     .time1{
         position: absolute;
@@ -206,6 +229,7 @@
         width: 400px;
         height: 30%;
         border: black 2px solid;
+        text-align: center;
         
     }
     .time1>img{

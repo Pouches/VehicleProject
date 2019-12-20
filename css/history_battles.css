@@ -1,26 +1,44 @@
 /*  history  */
-/*
+
 @media only screen and (min-width:200px) and (max-width:500px){
     @font-face {
         font-family:olden ;
         src: url(fonts/Typew.ttf);
     }
+    .nav{
+        z-index: 4;
+    }
     body{
         background-image: url(../images/old_paper.jpg);
         background-repeat: repeat;
         margin-left: 0px;
         margin-right: 0px;
-        width: 2000px;
+        overflow-x: auto;
 
     }
     .timeline{
         background: black;
-        width: 100%;
+        width: 10000%;
         height: 5px;
         position: absolute;
         top: 50%;
         left: 0px;
+        display: inline-block;
     }
+    .zline{
+        position: absolute;
+        height: 200%;
+        width: 5px;
+        background: black;
+        right: 0%;
+        top: 50%;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform-origin: top left;
+}
     .nav{
         list-style-type: none;
         float: left;
@@ -43,56 +61,225 @@
         transition: .7s;
     }
 
-    .i-love-history{
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
+
     ul{
         float: left;
     }
-    .linia{
+    .hline{
         background: black;
-        width: 5px;
+        width: 50px;
         position: absolute;
-        top: 50%;
+        top: 5%;
         left: 50%;
     }
-    .time1{}
-    .time2{}
-    .time3{}
-    .time4{}
-    .time5{}
-    .time6{}
-    .time7{}
-    .time8{}
-    .time9{}
-    .time10{}
-    .time11{}
-    .time12{}
+
+    .history{
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+    }
+    .time1  /*.time2  .time3 .time4 .time5 .time6 .time7 .time8 .time9 .time10 .time11  .time12*/{
+      transform: rotate(90deg) ;
+        transform-origin: top left;
+    }
+.test{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+    .time1  .time2  .time3 .time4 .time5 .time6 .time7 .time8 .time9 .time10 .time11  .time12{}
+    .timeline{
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+    }
+    
+    .timeline{
+        display: flex;
+        flex-direction: row;
+        width: 400vw;
+    }
+    .time1{
+        position: absolute;
+        top: 10%;
+        left: -30%;
+       /* width: 100px;
+        height: 100px;*/
+        width: 20%;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+        border: black 2px solid;
+        text-align: center;
+        
+    }
+    .time1>img{
+        width: 100%;
+        height: 40%;
+        position: relative;
+        top: 0%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        
+    }/*
+    .time2{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 30%;
+        left: 87%;
+    }
+    .time2>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 10%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time3{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 50%;
+        left: 87%;
+    }
+    .time3>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 10%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time4{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 70%;
+        left: 87%;
+    }
+    .time4>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 5%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time5{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 90%;
+        left: 87%; 
+    }
+    .time5>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 5%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time6{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 110%;
+        left: 87%;
+    }
+    .time6>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 10%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+
 
 }
-
+/*
 @media only screen and (min-width:501px) and (max-width:719px){
     @font-face {
         font-family:olden ;
         src: url(fonts/Typew.ttf);
     }
+    .nav{
+        z-index: 4;
+    }
     body{
         background-image: url(../images/old_paper.jpg);
         background-repeat: repeat;
         margin-left: 0px;
         margin-right: 0px;
-        width: 2000px;
+        overflow-x: auto;
 
     }
     .timeline{
         background: black;
-        width: 100%;
+        width: 10000%;
         height: 5px;
         position: absolute;
         top: 50%;
         left: 0px;
+        display: inline-block;
     }
+    .zline{
+        position: absolute;
+        height: 200%;
+        width: 5px;
+        background: black;
+        right: 0%;
+        top: 50%;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform-origin: top left;
+}
     .nav{
         list-style-type: none;
         float: left;
@@ -115,36 +302,497 @@
         transition: .7s;
     }
 
-    .i-love-history{
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
+
     ul{
         float: left;
     }
-    .time1{}
-    .time2{}
-    .time3{}
-    .time4{}
-    .time5{}
-    .time6{}
-    .time7{}
-    .time8{}
-    .time9{}
-    .time10{}
-    .time11{}
-    .time12{}
+    .hline{
+        background: black;
+        width: 50px;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+    }
+
+    .history{
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+    }
+    .time1  /*.time2  .time3 .time4 .time5 .time6 .time7 .time8 .time9 .time10 .time11  .time12{
+      transform: rotate(90deg) ;
+        transform-origin: top left;
+    }
+.test{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+    .time1  .time2  .time3 .time4 .time5 .time6 .time7 .time8 .time9 .time10 .time11  .time12{}
+    .timeline{
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+    }
+    
+    .timeline{
+        display: flex;
+        flex-direction: row;
+        width: 400vw;
+    }
+    .time1{
+        position: absolute;
+        top: 10%;
+        left: -15%;
+       /* width: 100px;
+        height: 100px;
+        width: 250px;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+        border: black 2px solid;
+        text-align: center;
+        
+    }
+    .time1>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 0%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        
+    }
+    .time2{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 30%;
+        left: 87%;
+    }
+    .time2>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 10%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time3{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 50%;
+        left: 87%;
+    }
+    .time3>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 10%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time4{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 70%;
+        left: 87%;
+    }
+    .time4>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 5%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time5{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 90%;
+        left: 87%; 
+    }
+    .time5>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 5%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time6{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 110%;
+        left: 87%;
+    }
+    .time6>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 10%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+
 
 }
-*/
+
 @media only screen and (min-width:720px) and (max-width:2160px){
     @font-face {
         font-family:olden ;
         src: url(fonts/Typew.ttf);
     }
+    .nav{
+        z-index: 4;
+    }
     body{
         background-image: url(../images/old_paper.jpg);
         background-repeat: repeat;
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow-x: auto;
+
+    }
+    .timeline{
+        background: black;
+        width: 10000%;
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        display: inline-block;
+    }
+    .zline{
+        position: absolute;
+        height: 200%;
+        width: 5px;
+        background: black;
+        right: 0%;
+        top: 50%;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform-origin: top left;
+}
+    .nav{
+        list-style-type: none;
+        float: left;
+        position: fixed;
+        left: 33%;
+    }
+    .nav>li{
+        float: left;
+        padding: 10px;
+    }
+    .nav>li>a{
+        color: black;
+        font-family: olden;
+        float: left;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    .nav>li>a:hover{
+        color: white;
+        transition: .7s;
+    }
+
+
+    ul{
+        float: left;
+    }
+    .hline{
+        background: black;
+        width: 50px;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+    }
+
+    .history{
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+    }
+    {
+      transform: rotate(90deg) ;
+        transform-origin: top left;
+    }
+.test{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+    .time1  .time2  .time3 .time4 .time5 .time6 .time7 .time8 .time9 .time10 .time11  .time12{}
+    .timeline{
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+    }
+    
+    .timeline{
+        display: flex;
+        flex-direction: row;
+        width: 400vw;
+    }
+    .time1{
+        position: absolute;
+        top: 10%;
+        left: -15%;
+       width: 100px;
+        height: 100px;
+        width: 250px;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+        border: black 2px solid;
+        text-align: center;
+        
+    }
+    .time1>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 0%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        
+    }
+    .time2{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 30%;
+        left: 87%;
+    }
+    .time2>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 10%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time3{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 50%;
+        left: 87%;
+    }
+    .time3>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 10%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time4{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 70%;
+        left: 87%;
+    }
+    .time4>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 5%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time5{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 90%;
+        left: 87%; 
+    }
+    .time5>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 5%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+    .time6{
+        width: 250px;
+        height: 190px;
+        border: black solid 3px;
+        transform: rotate(90deg) ;
+        transform-origin: top left;
+        position: absolute;
+        top: 110%;
+        left: 87%;
+    }
+    .time6>img{
+        width: 200px;
+        height: 125px;
+        position: relative;
+        top: 10%;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        float: left;
+        
+    }
+
+
+
+
+}*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*change the background image*/
+/*  battles  */
+
+@media only screen and (min-width:200px) and (max-width:500px){
+        @font-face {
+        font-family:olden ;
+        src: url(fonts/Typew.ttf);
+    }
+}
+
+@media only screen and (min-width:501px) and (max-width:719px){
+        @font-face {
+        font-family:olden ;
+        src: url(fonts/Typew.ttf);
+    }
+}
+
+@media only screen and (min-width:720px) and (max-width:2160px){
+    @font-face {
+        font-family:olden ;
+        src: url(fonts/Typew.ttf);
+    }
+    .nav{
+        z-index: 4;
+    }
+    .body{
+        background-image: url(../images/iwo-jima.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 0px;
+        height: 100%;
         margin-left: 0px;
         margin-right: 0px;
         overflow-x: auto;
@@ -225,18 +873,18 @@
     left: 0;
     top: 0;
 }
-    .time1  .time2  .time3 .time4 .time5 .time6 .time7 .time8 .time9 .time10 .time11  .time12{}
+ /*   .time1  .time2  .time3 .time4 .time5 .time6 .time7 .time8 .time9 .time10 .time11  .time12{}*/
     .timeline{
         transform: rotate(90deg) translateY(-100vh);
         transform-origin: top left;
     }
-    
+    .t1940
     .timeline{
         display: flex;
         flex-direction: row;
         width: 400vw;
     }
-    .time1{
+    .time1-2{
         position: absolute;
         top: 15%;
         left: -25%;
@@ -250,7 +898,7 @@
         text-align: center;
         
     }
-    .time1>img{
+    .time1-2>img{
         width: 200px;
         height: 125px;
         position: relative;
@@ -259,77 +907,16 @@
         margin: 0;
         padding: 0;
         clear: both;
+
         
     }
-    .time2{}
-    .time3{}
-    .time4{}
-    .time5{}
-    .time6{}
-    .time7{}
-    .time8{}
+    .time2-2{}
+    .time3-2{}
+    .time4-2{}
+    .time5-2{}
+    .time6-2{}
+    .time7-2{}
+    .time8-2{}
 
 
-
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  battles  */
-
-@media only screen and (min-width:200px) and (max-width:500px){
-        @font-face {
-        font-family:olden ;
-        src: url(fonts/Typew.ttf);
-    }
-}
-
-@media only screen and (min-width:501px) and (max-width:719px){
-        @font-face {
-        font-family:olden ;
-        src: url(fonts/Typew.ttf);
-    }
-}
-
-@media only screen and (min-width:720px) and (max-width:2160px){
-        @font-face {
-        font-family:olden ;
-        src: url(fonts/Typew.ttf);
-    }
 } 

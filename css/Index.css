@@ -158,7 +158,8 @@
     .headerbarlink:hover{
         color:gold;
         text-decoration:none;
-        transition-duration: 1s;
+        -webkit-transition-duration: 1s;
+                transition-duration: 1s;
     }
 
     .headerbarlink:active{
@@ -232,32 +233,7 @@
     url(../Fonts/Noto-serif/NotoSerif-ExtraBold.ttf) format('truetype');
 }
 
-.rightVarriant{
-    border: black solid 4px;
-    left:70%;
-    width:25%;
-    margin-top:1%;
-    margin-top:1%;
-    margin-bottom:1%;
-    position: relative;
-}
-
-.centerVarriant{
-    border: black solid 4px;
-    left:35%;
-    width:25%;
-    margin-top:1%;
-    margin-top:1%;
-    position: relative;
-    margin-bottom:1%;
-}
-
-.leftVarriant{
-    border: black solid 4px;
-    width:25%;
-    left:4%;
-    margin-top:1%;
-    margin-bottom:1%;
-    margin-left:2%;
-    position: relative;
+.VarriantBox{
+    border: solid black 4px;
+    margin-bottom:1em;
 }
